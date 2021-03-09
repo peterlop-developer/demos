@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360&deg; Image</title>
+    <meta name="description" content="360&deg; Image - A-Frame">
+    <script src="aframe.min.js"></script>
+    <script src="dist/aframe-look-at-component.min.js"></script>
+    <script src="aframe-ar-nft.js"></script>
+  </head>
+  <body>
+    
+    <a-scene>
+      <a-sky src="./Fotos360/Cobetas_Posicion_3.jpg" 
+             rotation="0 -110 0">
+      </a-sky>
+
+      <a-assets>
+        <a-asset-item id="modelo3D" src="./Modelo3D/Iglesia.glb"></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#modelo3D" rotation="0 45.10552946387893 0" scale="0.003 0.003 0.003" position="0.46651 0 -8.02029"></a-entity>
+
+      <a-text font="kelsonsans" value="KOBETAS" width="6" position="-0.4 0 -5.43537" rotation="0.852561199154665 14.976543806924589 -3.1844994253371155" text=""></a-text>      
+
+    </a-scene>
+  </body>
+</html>
